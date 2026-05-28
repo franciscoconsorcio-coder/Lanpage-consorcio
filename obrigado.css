@@ -27,15 +27,15 @@ body {
 
   overflow: hidden;
 
- background:
+background:
   linear-gradient(
     to right,
     rgba(0,0,0,0.92),
     rgba(0,0,0,0.72)
   ),
-  url("./Img/Capturar1.png");
+  url("./Img/hero-premium.png");
 
-background-size: 700px;
+background-size: cover;
 
 background-repeat: no-repeat;
 
