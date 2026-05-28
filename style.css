@@ -8,7 +8,9 @@ html {
   box-sizing: border-box;
 }
 
-/* BODY */
+/* ========================================
+   BODY
+======================================== */
 
 body {
 
@@ -125,8 +127,8 @@ body {
   background-image:
     linear-gradient(
       to right,
-      rgba(0, 0, 0, 0.589),
-      rgba(0, 0, 0, 0.288)
+      rgba(0, 0, 0, 0.60),
+      rgba(0, 0, 0, 0.25)
     ),
     url("./Img/hero-premium.png");
 
@@ -193,7 +195,7 @@ body {
 
 }
 
-/* TÍTULO */
+/* HERO TITLE */
 
 .hero h1 {
 
@@ -218,7 +220,7 @@ body {
 
 }
 
-/* TEXTO */
+/* HERO DESCRIPTION */
 
 .hero-description {
 
@@ -234,7 +236,7 @@ body {
 
 }
 
-/* CARDS */
+/* HERO CARDS */
 
 .hero-cards {
 
@@ -292,8 +294,6 @@ body {
 
 }
 
-/* ÍCONE */
-
 .hero-icon {
 
   min-width: 70px;
@@ -320,8 +320,6 @@ body {
 
 }
 
-/* TEXTO */
-
 .hero-mini-card h3 {
 
   color: #ffffff;
@@ -340,7 +338,7 @@ body {
 
 }
 
-/* BOTÃO HERO */
+/* HERO BUTTON */
 
 .hero-btn {
 
@@ -401,8 +399,6 @@ body {
 
 }
 
-/* MINI TEXTO */
-
 .mini-text {
 
   margin-top: 20px;
@@ -433,9 +429,6 @@ body {
 
   border-bottom: 1px solid rgba(255,0,0,0.15);
 
-  box-shadow:
-    0 0 30px rgba(255,0,0,0.08);
-
   color: white;
 
   text-align: center;
@@ -465,10 +458,10 @@ body {
   background-image:
     linear-gradient(
       to right,
-      rgba(0, 0, 0, 0.747),
+      rgba(0,0,0,0.75),
       rgba(0,0,0,0.65)
     ),
-    url("./Img/file_000000000b8471f98ab96d2ecc7e60f7\(1\)\(1\).png");
+    url("./Img/file_000000000b8471f98ab96d2ecc7e60f7(1)(1).png");
 
   background-size: cover;
 
@@ -477,8 +470,6 @@ body {
   overflow: hidden;
 
 }
-
-/* OVERLAY */
 
 .premium-overlay {
 
@@ -495,8 +486,6 @@ body {
 
 }
 
-/* CONTENT */
-
 .premium-content {
 
   position: relative;
@@ -506,8 +495,6 @@ body {
   max-width: 650px;
 
 }
-
-/* BADGE */
 
 .premium-badge {
 
@@ -533,11 +520,7 @@ body {
 
   margin-bottom: 25px;
 
-  backdrop-filter: blur(10px);
-
 }
-
-/* TÍTULO */
 
 .premium-text h2 {
 
@@ -545,11 +528,7 @@ body {
 
   line-height: 1.1;
 
-  color: #ffffff;
-
   margin-bottom: 25px;
-
-  font-weight: 700;
 
 }
 
@@ -557,12 +536,7 @@ body {
 
   color: #ff1e1e;
 
-  text-shadow:
-    0 0 25px rgba(255,0,0,0.5);
-
 }
-
-/* TEXTO */
 
 .premium-text p {
 
@@ -576,8 +550,6 @@ body {
 
 }
 
-/* LISTA */
-
 .premium-list {
 
   list-style: none;
@@ -588,15 +560,13 @@ body {
 
 .premium-list li {
 
-  color: #f8fafc;
-
   margin-bottom: 18px;
 
   font-size: 1.1rem;
 
 }
 
-/* BOTÃO */
+/* BUTTON */
 
 .btn {
 
@@ -634,14 +604,19 @@ body {
 }
 
 /* ========================================
-   SEGMENTS
+   SEGMENTS / BENEFITS
 ======================================== */
 
-.segments {
-
-  position: relative;
+.segments,
+.benefits {
 
   padding: 120px 20px;
+
+  text-align: center;
+
+}
+
+.segments {
 
   background:
     linear-gradient(
@@ -650,52 +625,9 @@ body {
       #111111
     );
 
-  text-align: center;
-
-  overflow: hidden;
-
 }
-
-.segments::before {
-
-  content: "";
-
-  position: absolute;
-
-  inset: 0;
-
-  background:
-    radial-gradient(
-      circle at top left,
-      rgba(217,4,41,0.18),
-      transparent 35%
-    );
-
-}
-
-.segments h2 {
-
-  position: relative;
-
-  z-index: 2;
-
-  font-size: 3rem;
-
-  margin-bottom: 70px;
-
-}
-
-/* ========================================
-   BENEFITS
-======================================== */
 
 .benefits {
-
-  position: relative;
-
-  padding: 120px 20px;
-
-  text-align: center;
 
   background:
     linear-gradient(
@@ -706,6 +638,7 @@ body {
 
 }
 
+.segments h2,
 .benefits h2 {
 
   font-size: 3rem;
@@ -714,9 +647,7 @@ body {
 
 }
 
-/* ========================================
-   CARDS
-======================================== */
+/* CARDS */
 
 .cards {
 
@@ -747,8 +678,6 @@ body {
 
   border:
     1px solid rgba(255,0,0,0.12);
-
-  backdrop-filter: blur(10px);
 
   transition: 0.45s;
 
@@ -797,13 +726,9 @@ body {
 
   text-align: center;
 
-  color: white;
-
   background: #000;
 
 }
-
-/* CARROSSEL */
 
 .form-carousel {
 
@@ -811,15 +736,9 @@ body {
 
   inset: 0;
 
-  width: 100%;
-
-  height: 100%;
-
   z-index: 1;
 
 }
-
-/* SLIDES */
 
 .form-slide {
 
@@ -835,17 +754,14 @@ body {
 
   background-position: center;
 
-
 }
-
-/* IMAGENS */
 
 .slide1 {
 
   background-image:
     url("./Img/Capturar1.png");
 
-    background-size: 620px;
+  background-size: 620px;
 
   animation-delay: 0s;
 
@@ -856,7 +772,7 @@ body {
   background-image:
     url("./Img/Capturar2.jpg");
 
-    background-size: 630px;
+  background-size: 805px;
 
   animation-delay: 5s;
 
@@ -867,7 +783,7 @@ body {
   background-image:
     url("./Img/Capturar3.png");
 
-    background-size: 605px;
+  background-size: 835px;
 
   animation-delay: 10s;
 
@@ -878,13 +794,11 @@ body {
   background-image:
     url("./Img/Capturar4.webp");
 
-    background-size: 605px;
+  background-size: 590px;
 
   animation-delay: 15s;
 
 }
-
-/* OVERLAY */
 
 .form-overlay {
 
@@ -902,8 +816,6 @@ body {
   z-index: 2;
 
 }
-
-/* CONTAINER */
 
 .form-container {
 
@@ -927,12 +839,7 @@ body {
   border:
     1px solid rgba(255,255,255,0.08);
 
-  box-shadow:
-    0 10px 40px rgba(0,0,0,0.45);
-
 }
-
-/* TÍTULO */
 
 .form-section h2 {
 
@@ -948,19 +855,13 @@ body {
 
 }
 
-/* TEXTO */
-
 .form-text {
 
   color: #d1d5db;
 
   margin-bottom: 35px;
 
-  line-height: 1.7;
-
 }
-
-/* FORM */
 
 form {
 
@@ -971,8 +872,6 @@ form {
   gap: 16px;
 
 }
-
-/* INPUTS */
 
 input,
 select {
@@ -1009,12 +908,7 @@ select:focus {
   border:
     1px solid #ff1e1e;
 
-  box-shadow:
-    0 0 15px rgba(255,0,0,0.35);
-
 }
-
-/* BOTÃO */
 
 button {
 
@@ -1039,14 +933,6 @@ button {
 
   cursor: pointer;
 
-  transition: 0.4s;
-
-}
-
-button:hover {
-
-  transform: translateY(-4px);
-
 }
 
 /* SUCCESS */
@@ -1067,10 +953,7 @@ button:hover {
 
 footer {
 
-  background:
-    #050505;
-
-  color: white;
+  background: #050505;
 
   text-align: center;
 
@@ -1095,12 +978,13 @@ footer {
   display: flex;
 
   align-items: center;
+  justify-content: center;
 
   gap: 10px;
 
-  padding: 15px 22px;
+  padding: 16px 24px;
 
-  border-radius: 50px;
+  border-radius: 60px;
 
   background:
     linear-gradient(
@@ -1113,20 +997,34 @@ footer {
 
   text-decoration: none;
 
-  font-weight: bold;
+  font-weight: 700;
+
+  font-size: 1rem;
 
   box-shadow:
-    0 5px 20px rgba(0,0,0,0.4);
+    0 10px 30px rgba(0,0,0,0.35);
 
   z-index: 999;
 
-  transition: 0.3s;
+  transition:
+    background 0.3s ease,
+    box-shadow 0.3s ease;
+
+  animation: whatsappPulse 2s infinite;
 
 }
 
 .whatsapp-button:hover {
 
-  transform: scale(1.08);
+  background:
+    linear-gradient(
+      135deg,
+      #29e06f,
+      #20c863
+    );
+
+  box-shadow:
+    0 12px 35px rgba(37,211,102,0.45);
 
 }
 
@@ -1143,32 +1041,53 @@ footer {
 @keyframes fadeSlider {
 
   0% {
-
     opacity: 0;
-
   }
 
   5% {
-
     opacity: 1;
-
   }
 
   25% {
-
     opacity: 1;
-
   }
 
   30% {
-
     opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+
+}
+
+@keyframes whatsappPulse {
+
+  0% {
+
+    transform: scale(1);
+
+    box-shadow:
+      0 0 0 0 rgba(37,211,102,0.65);
+
+  }
+
+  70% {
+
+    transform: scale(1.06);
+
+    box-shadow:
+      0 0 0 18px rgba(37,211,102,0);
 
   }
 
   100% {
 
-    opacity: 0;
+    transform: scale(1);
+
+    box-shadow:
+      0 0 0 0 rgba(37,211,102,0);
 
   }
 
@@ -1250,11 +1169,7 @@ footer {
 
   .premium-section {
 
-    min-height: auto;
-
     padding: 100px 20px;
-
-    background-position: 65% center;
 
   }
 
