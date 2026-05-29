@@ -132,7 +132,7 @@ body {
     ),
     url("./Img/hero-premium.png");
 
-  background-size: 680px;
+  background-size: cover;
 
   background-position: right center;
 
@@ -199,7 +199,7 @@ body {
 
 .hero h1 {
 
-  font-size: 5rem;
+  font-size: clamp(2rem, 7vw, 5rem);
 
   line-height: 1.05;
 
@@ -524,7 +524,7 @@ body {
 
 .premium-text h2 {
 
-  font-size: 4rem;
+  font-size: clamp(2rem, 6vw, 4rem);
 
   line-height: 1.1;
 
@@ -641,7 +641,7 @@ body {
 .segments h2,
 .benefits h2 {
 
-  font-size: 3rem;
+  font-size: clamp(2rem, 5vw, 3rem);
 
   margin-bottom: 70px;
 
@@ -754,14 +754,14 @@ body {
 
   background-position: center;
 
+  background-size: cover;
+
 }
 
 .slide1 {
 
   background-image:
     url("./Img/Capturar1.png");
-
-  background-size: 620px;
 
   animation-delay: 0s;
 
@@ -772,8 +772,6 @@ body {
   background-image:
     url("./Img/Capturar2.jpg");
 
-  background-size: 805px;
-
   animation-delay: 5s;
 
 }
@@ -783,8 +781,6 @@ body {
   background-image:
     url("./Img/Capturar3.png");
 
-  background-size: 835px;
-
   animation-delay: 10s;
 
 }
@@ -793,8 +789,6 @@ body {
 
   background-image:
     url("./Img/Capturar4.webp");
-
-  background-size: 590px;
 
   animation-delay: 15s;
 
@@ -843,7 +837,7 @@ body {
 
 .form-section h2 {
 
-  font-size: 3rem;
+  font-size: clamp(2rem, 5vw, 3rem);
 
   margin-bottom: 20px;
 
@@ -1094,7 +1088,7 @@ footer {
 }
 
 /* ========================================
-   RESPONSIVO
+   TABLET
 ======================================== */
 
 @media (max-width: 768px) {
@@ -1121,15 +1115,9 @@ footer {
 
     padding: 120px 20px;
 
-    background-size: 380px;
+    background-size: cover;
 
     background-position: bottom center;
-
-  }
-
-  .hero h1 {
-
-    font-size: 2.8rem;
 
   }
 
@@ -1151,7 +1139,7 @@ footer {
   .benefits h2,
   .form-section h2 {
 
-    font-size: 2.2rem;
+    margin-bottom: 50px;
 
   }
 
@@ -1165,17 +1153,13 @@ footer {
 
     padding: 35px 25px;
 
+    backdrop-filter: none;
+
   }
 
   .premium-section {
 
     padding: 100px 20px;
-
-  }
-
-  .premium-text h2 {
-
-    font-size: 2.5rem;
 
   }
 
@@ -1193,6 +1177,232 @@ footer {
     padding: 14px 18px;
 
     font-size: 0.95rem;
+
+  }
+
+}
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 480px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .navbar {
+
+    width: 94%;
+
+    padding: 12px 16px;
+
+    top: 12px;
+
+    border-radius: 16px;
+
+  }
+
+  .logo {
+
+    font-size: 0.95rem;
+
+  }
+
+  .hero {
+
+    min-height: auto;
+
+    padding:
+      130px 18px
+      80px;
+
+    background-size: 260px;
+
+    background-position:
+      bottom center;
+
+  }
+
+  .hero-content {
+
+    max-width: 100%;
+
+  }
+
+  .hero h1 {
+
+    line-height: 1.15;
+
+    margin-bottom: 18px;
+
+  }
+
+  .hero-description {
+
+    font-size: 0.95rem;
+
+    line-height: 1.7;
+
+    margin-bottom: 30px;
+
+  }
+
+  .hero-mini-card {
+
+    padding: 18px;
+
+    border-radius: 18px;
+
+    gap: 14px;
+
+    backdrop-filter: none;
+
+  }
+
+  .hero-icon {
+
+    min-width: 55px;
+    min-height: 55px;
+
+    font-size: 1.5rem;
+
+  }
+
+  .hero-mini-card h3 {
+
+    font-size: 1rem;
+
+  }
+
+  .hero-mini-card p {
+
+    font-size: 0.92rem;
+
+  }
+
+  .hero-btn {
+
+    width: 100%;
+
+    padding: 16px;
+
+    font-size: 0.95rem;
+
+  }
+
+  .mini-text {
+
+    font-size: 0.9rem;
+
+  }
+
+  .premium-section {
+
+    padding: 90px 18px;
+
+    min-height: auto;
+
+    background-position: center;
+
+  }
+
+  .premium-text h2 {
+
+    line-height: 1.2;
+
+  }
+
+  .premium-text p {
+
+    font-size: 0.95rem;
+
+  }
+
+  .premium-list li {
+
+    font-size: 0.95rem;
+
+  }
+
+  .segments,
+  .benefits,
+  .form-section {
+
+    padding: 80px 18px;
+
+  }
+
+  .segments h2,
+  .benefits h2,
+  .form-section h2 {
+
+    margin-bottom: 40px;
+
+  }
+
+  .card {
+
+    padding: 28px 20px;
+
+    border-radius: 22px;
+
+  }
+
+  .card h3 {
+
+    font-size: 1.25rem;
+
+  }
+
+  .card p {
+
+    font-size: 0.95rem;
+
+  }
+
+  .form-container {
+
+    padding: 28px 18px;
+
+    border-radius: 22px;
+
+  }
+
+  input,
+  select,
+  button {
+
+    font-size: 0.95rem;
+
+    padding: 14px;
+
+  }
+
+  .whatsapp-button {
+
+    width: 58px;
+    height: 58px;
+
+    padding: 0;
+
+    border-radius: 50%;
+
+    right: 14px;
+    bottom: 14px;
+
+  }
+
+  .whatsapp-button span {
+
+    display: none;
+
+  }
+
+  .whatsapp-button i {
+
+    font-size: 1.5rem;
 
   }
 
