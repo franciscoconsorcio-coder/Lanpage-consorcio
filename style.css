@@ -1437,3 +1437,70 @@ footer {
   }
 
 }
+/* ========================================
+   RESPONSIVIDADE HERO
+======================================== */
+
+/* NOTEBOOKS */
+@media (min-width: 1024px) and (max-width: 1440px) {
+
+  .hero {
+
+    min-height: 100vh;
+
+    padding: 120px 6%;
+
+    background-size: cover;
+
+    background-position: 72% center;
+
+  }
+
+}
+
+/* DESKTOP GRANDE */
+@media (min-width: 1441px) {
+
+  .hero {
+
+    background-size: cover;
+
+    background-position: right center;
+
+  }
+
+}
+
+/* TABLET */
+@media (max-width: 1023px) {
+
+  .hero {
+
+    padding: 120px 30px;
+
+    background-size: cover;
+
+    background-position: center;
+
+  }
+
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .hero {
+
+    min-height: auto;
+
+    padding:
+      130px 18px
+      80px;
+
+    background-size: cover;
+
+    background-position: center;
+
+  }
+
+}
